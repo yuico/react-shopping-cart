@@ -52,6 +52,7 @@ const App = () => {
         );
       }
       //2. First time the item is added
+      return [...prev, { ...clickedItem, amount: 1 }];
     });
   };
 
